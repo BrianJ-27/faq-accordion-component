@@ -1,0 +1,20 @@
+// **************************************
+//FUNCTIONS
+// **************************************
+
+/*
+Important reminders: 
+1) only use functions for simple calculations we can use 
+   instead of doing the math in our own head
+*/
+
+@use "../utilities/variables" as *;
+//convert pixels to rem value
+@function px-to-rems($target, $context: $base-font-size) {
+  @return calc(($target / $context) * 1rem);
+}
+
+//convert pixels to percentage value
+@function px-to-pc($target, $context: $max-width) {
+  @return calc(($target / $context) * 100%);
+}

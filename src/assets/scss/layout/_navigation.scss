@@ -1,0 +1,41 @@
+// **************************************
+// NAVIGATION STYLES
+// **************************************
+@use "../utilities" as *;
+
+/*-----Main nav styles-----*/
+.main-nav {
+  background-color: #000;
+}
+
+//main nav <ul> styles
+.main-nav__list {
+  @extend %ul-list-stle;
+}
+
+//main nav <li> styles
+.main-nav__item {
+  @include flex_me($vertAlign: center);
+}
+
+// <a> link styles
+.main-nav__link {
+  @extend %link-properties;
+  transition: color 0.5s;
+  &:link {
+    color: $color-link-default;
+  }
+  &:visited {
+    color: $color-link-visited;
+  }
+  &:hover {
+    color: $white;
+  }
+  &:active {
+    color: $color-link-active;
+    text-decoration: none;
+  }
+  &:focus {
+    color: blue;
+  }
+}

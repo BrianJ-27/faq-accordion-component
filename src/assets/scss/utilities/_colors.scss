@@ -1,0 +1,71 @@
+// **************************************
+// GLOBAL COLOR VARIABLES
+// **************************************
+
+/*-----Descriptive Color Variables-----*/
+$white: #fff;
+$black: #000;
+$serene-midnight: #0d0d0d;
+$relaxed-silver: #b8bcbf;
+$grey: #878787;
+$tire-wheel: #2f2f2f;
+$silver-surfer: #dbdbdb;
+$deep-koamaru: #111e6c;
+$calm-blue: #024873;
+$sophisticated-teal: #025e73;
+$sunflower: #ffbf00;
+$bright-sky: #9de5ff;
+$the-hulk: #3b7a57;
+$algae-green: #93dfb8;
+$amethyst-smoke: #a397b4;
+$barney: #714693;
+$bone: #d4c4a8;
+$almond: #eed9c4;
+$grey-poupon: #af8f2c;
+$apple-blossom: #af4d43;
+$apricot: #eb9373;
+$burnt-orange: #da6304;
+$bean: #3d0c02;
+$bubblegum: #eec1be;
+
+/*-----Project Color Variables-----*/
+$calm-blue: #1261a6;
+$sophisticated-teal: #025e73;
+$mellow-skyblue: #29a7d9;
+$serene-midnight: #041e40;
+$relaxed-silver: #b8bcbf;
+$white: #fff;
+
+/*-----Functional Color Variables-----*/
+$color-main: $calm-blue;
+$color-secondary: $white;
+$color-complement: complement($color-main);
+$color-accent: $mellow-skyblue;
+
+//background / Overlay colors
+$color-bg: $serene-midnight;
+$color-overlay: rgba($color-main, 0.5);
+$color-bg-footer: $serene-midnight;
+$color-bg-header: $serene-midnight;
+
+//Link colors
+$color-link-default: $white;
+$color-link-active: $silver-surfer;
+$color-link-hover: $sophisticated-teal;
+$color-link-visited: $silver-surfer;
+
+//Border Colors
+$color-border-light: $white;
+$color-border-dark: $black;
+
+//Headings & Paragraph Colors
+$color-text-light: $white;
+$color-text-base: $grey;
+$color-text-dark: $tire-wheel;
+
+//Button Colors
+$color-link-button-default: $color-main;
+$color-link-button-success: #09e827;
+$color-link-button-error: #d13219;
+$color-link-button-warning: #ff760d;
+$color-link-button-info: #693d80;

@@ -1,0 +1,33 @@
+// **************************************
+// GLOBAL VARIABLES
+// **************************************
+
+//layout
+$max-width: 1200px;
+$gutter: 15px;
+$header-height: 600px;
+$footer-height: 150px;
+
+//Font Stacks
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,400&family=Raleway&display=swap");
+$font-stack-main: "Lato", sans-serif;
+$font-stack-secondary: "Raleway", sans-serif;
+$base-font-size: 16px;
+
+//border radius
+$soft-curve: 5px;
+$moderate-curve: 15px;
+$hard-curve: 25px;
+$full-circle: 50%;
+
+//Breakpoint Sizes
+$mobile-view: 320px;
+$tablet-view: 768px;
+$desktop-view: 1024px;
+
+// Media Query Breakpoint Map
+$breakpoints: (
+  "sm": $mobile-view,
+  "md": $tablet-view,
+  "lg": $desktop-view,
+);
