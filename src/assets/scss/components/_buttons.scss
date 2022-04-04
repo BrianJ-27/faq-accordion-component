@@ -7,7 +7,7 @@
 .btn__overlay--full {
   @extend %btn-properties;
   &:hover {
-    background-color: $color-main;
+    background-color: var(--clr-accent-200);
   }
   @include mq("md") {
   }

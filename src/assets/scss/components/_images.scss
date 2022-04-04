@@ -7,23 +7,24 @@
   @extend %img-properties;
 
   &__card-header {
-    display: block;
+    @extend %img-properties;
   }
 
   &__logo {
-    text-align: left;
+    @extend %img-properties;
+    max-width: px-to-rems(90px);
   }
 
   &__hero-header {
-    display: block;
+    @extend %img-properties;
   }
 
   &__person {
-    @include roundy($dim: 125px, $border: 1px solid $color-border-dark);
+    @include roundy($dim: 125px, $border: 1px solid var(--clr-primary-200));
   }
 
   &__nav-icons {
-    fill: $color-complement;
+    fill: var(--clr-accent-400);
     width: 20px;
     height: 20px;
     margin-right: px-to-rems(5px);

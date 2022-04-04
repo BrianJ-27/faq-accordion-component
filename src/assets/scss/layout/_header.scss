@@ -5,9 +5,6 @@
 
 .header {
   position: relative;
-  &__bar {
-    min-height: $header-height;
-  }
 
   &__overlay {
     position: absolute;

@@ -3,13 +3,19 @@
 // **************************************
 @use "../utilities" as *;
 
+/*-----HEADINGS------*/
+
+:is(h1,h2,h3,h4,h5,h6) {
+  font-family: var(--fp-family-headings);
+}
+
 //h1 styles
 .title__primary {
   @extend %text-modules;
   @include text-prop(
     $size: clamp(1rem, 1.908rem + (0.0454 * 100vw), 3.5rem),
-    $f-weight: 400,
-    $color: $color-text-base
+    $f-weight: var(--fp-f-weight-bold),
+    $color: var(--clr-text-100)
   );
 }
 
@@ -17,18 +23,21 @@
 .title__secondary {
   @include text-prop(
     $size: clamp(1.5rem, 8vw, 3rem),
-    $f-weight: 500,
-    $color: $color-accent
+    $f-weight: var(--fp-f-weight-normal),
+    $color: var(--clr-text-100)
   );
   @extend %text-modules;
 }
 
 /*----CONTENT STYLES----*/
+:is(p, span) {
+  font-family: var(--fp-family-content);
+}
 
 .content {
   @include text-prop(
     $size: clamp(1.25rem, 6vw, 2.5rem),
-    $f-weight: 800,
-    $color: $color-text-light
+    $f-weight: var(--fp-f-weight-light),
+    $color: var(--clr-text-300)
   );
 }

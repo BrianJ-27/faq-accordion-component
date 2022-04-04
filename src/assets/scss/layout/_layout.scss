@@ -5,8 +5,8 @@
 
 /*------BASE LAYOUT STYLES-----------*/
 #root {
-  max-width: calc(100% - 3.8rem);
+  max-width: calc(100% - 2rem);
   @include mq("md") {
-    max-width: $max-width;
+    max-width: --max-width;
   }
 }

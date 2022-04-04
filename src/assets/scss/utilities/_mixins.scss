@@ -9,15 +9,22 @@ Important reminders:
 3) mixins work best 
 */
 
-@use "./variables" as *;
+@use "./breakpoints" as *;
 
-/*Vendor Prefix to any css property*/
-@mixin css3-prefix($prop, $value) {
-  -webkit-#{$prop}: #{$value};
-  -moz-#{$prop}: #{$value};
-  -ms-#{$prop}: #{$value};
-  -o-#{$prop}: #{$value};
-  #{$prop}: #{$value};
+@mixin background-props(
+  $bg-color,
+  $imgPath1: null,
+  $imgPath2: null,
+  $bg-pos: null,
+  $bg-size: null,
+  $bg-repeat: null
+) {
+  background-color: $bg-color;
+  background-image: url(#{$imgPath1});
+  background-image: url(#{$imgPath2});
+  background-position: $bg-pos;
+  background-size: $bg-size;
+  background-repeat: $bg-repeat;
 }
 
 // Make a circled element
@@ -42,29 +49,6 @@ Important reminders:
   flex-direction: $dir;
   align-items: $vertAlign;
   justify-content: $just;
-}
-
-// Create a grid layout container
-@mixin grid_layout_container($grid-temp-col: null, $grid-temp-row: null) {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: $grid-temp-col;
-  grid-template-rows: $grid-temp-row;
-  grid-template-areas:
-    "header"
-    "navigation"
-    "main";
-  @include mq("md") {
-    grid-template-columns: $grid-temp-col;
-    grid-template-rows: $grid-temp-row;
-    grid-template-areas:
-      "navigation header header"
-      "navigation main main"
-      "navigation main main"
-      "navigation main main"
-      "navigation main main"
-      "navigation main main";
-  }
 }
 
 // create simple grid container

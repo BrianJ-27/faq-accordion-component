@@ -9,6 +9,7 @@ Important reminders:
 */
 
 @use "../utilities/variables" as *;
+$base-font-size: 16px;
 //convert pixels to rem value
 @function px-to-rems($target, $context: $base-font-size) {
   @return calc(($target / $context) * 1rem);

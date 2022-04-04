@@ -1,12 +1,10 @@
 // **************************************
 // Placeholders
 // **************************************
-@use "./variables" as v;
-@use "./colors" as c;
 
 // Global Body Tag Styles
 %body-properties {
-  font-family: v.$font-stack-main;
+  font-family: sans-serif;
   line-height: 1;
   min-height: 100vh;
 }
@@ -34,7 +32,7 @@
 %btn-properties {
   outline: none;
   border: none;
-  border-radius: v.$soft-curve;
+  border-radius: 25px;
   letter-spacing: 1.1px;
   font-weight: 500;
 }

@@ -23,24 +23,13 @@ body,
 }
 
 body {
-  background-color: blue;
+  background-color: var(--clr-secondary-300);
 }
 
 p {
   @extend %text-modules;
-  color: $color-text-dark;
 }
 
 a {
   @extend %link-properties;
-}
-
-/*-----HEADINGS------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-stack-secondary;
 }

@@ -23,16 +23,16 @@
   @extend %link-properties;
   transition: color 0.5s;
   &:link {
-    color: $color-link-default;
+    color: var(--clr-links-100);
   }
   &:visited {
-    color: $color-link-visited;
+    color: var(--clr-links-200);
   }
   &:hover {
-    color: $white;
+    color: var(--clr-links-300);
   }
   &:active {
-    color: $color-link-active;
+    color: var(--clr-links-400);
     text-decoration: none;
   }
   &:focus {
