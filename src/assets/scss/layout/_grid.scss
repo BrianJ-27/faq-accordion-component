@@ -18,13 +18,13 @@
 .main__grid--wrapper {
   display: grid;
   place-items: center;
-  width: 1000px;
-  max-width: 1000px;
-  height: 100%;
   margin: auto;
   padding: px-to-rems(10px);
   @include mq("md") {
     overflow: hidden;
+    width: 1000px;
+    max-width: 1000px;
+    height: 100%;
     grid-template-areas: "img__container accordian";
     grid-template-columns: 40% 60%;
   }

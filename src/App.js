@@ -8,7 +8,7 @@ import BoxDesktop from "./assets/images/illustration-box-desktop.svg";
 function App() {
   return (
     <React.Fragment>
-      <main className="">
+      <main>
         <img className="img__box-desktop" src={BoxDesktop} alt="" />
         <div className="main__grid--wrapper">
           <div className="img__container">
