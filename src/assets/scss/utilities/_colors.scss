@@ -2,84 +2,35 @@
 // THEME COLOR MAP
 // **************************************
 $colors: (
-  // Primary Colors
+  // Primary Text Color
   primary: (
-    100: hsl(150, 100%, 80%),
-    200: hsl(150, 100%, 70%),
-    300: hsl(150, 100%, 50%),
-    400: hsl(150, 100%, 33%),
-    500: hsl(150, 100%, 18%),
+    text: hsl(238, 29%, 16%)
   ),
-  // Secondary colors
+  // Secondary Text Color
   secondary: (
-    100: hsl(20, 100%, 80%),
-    200: hsl(20, 100%, 70%),
-    300: hsl(20, 100%, 50%),
-    400: hsl(20, 100%, 33%),
-    500: hsl(20, 100%, 18%),
+    text: hsl(14, 88%, 65%)
   ),
-  // Accent Colors
-  accent: (
-    100: hsl(300, 100%, 80%),
-    200: hsl(300, 100%, 70%),
-    300: hsl(300, 100%, 50%),
-    400: hsl(300, 100%, 33%),
-    500: hsl(300, 100%, 18%),
+  
+  // Background Gradient One
+  bg-gradient-1: (
+    300: hsl(240, 73%, 65%)
   ),
-  // Background Colors
-  background: (
-    100: hsl(200, 100%, 80%),
-    200: hsl(200, 100%, 70%),
-    300: hsl(200, 100%, 50%),
-    400: hsl(200, 100%, 33%),
-    500: hsl(200, 100%, 18%),
+
+  // Background Gradient Two
+  bg-gradient-2: (
+    300: hsl(273, 75%, 66%)
   ),
-  // Header Colors
-  header: (
-    100: hsl(23, 100%, 95%),
-    200: hsl(23, 100%, 60%),
-    300: hsl(23, 100%, 13%),
-    400: hsl(23, 100%, 8%),
-    500: hsl(23, 100%, 3%),
-  ),
-  // Footer Colors
-  footer: (
-    100: hsl(260, 100%, 80%),
-    200: hsl(260, 100%, 70%),
-    300: hsl(260, 100%, 50%),
-    400: hsl(260, 100%, 33%),
-    500: hsl(260, 100%, 18%),
-  ),
-  //Link colors
-  links: (
-    link: hsl(60, 100%, 80%),
-    visited: hsl(60, 100%, 70%),
-    focus: hsl(60, 100%, 50%),
-    hover: hsl(60, 100%, 33%),
-    active: hsl(60, 100%, 18%),
-  ),
-  // Border Colors
-  border: (
-    100: hsl(225, 100%, 80%),
-    200: hsl(225, 100%, 70%),
-    300: hsl(225, 100%, 50%),
-    400: hsl(225, 100%, 33%),
-    500: hsl(225, 100%, 18%),
-  ),
-  // Button Colors
-  btns: (
-    default: hsl(225, 100%, 50%),
-    success: hsl(150, 100%, 33%),
-    error: hsl(350, 100%, 50%),
-    warning: hsl(20, 100%, 50%),
-    info: hsl(260, 100%, 50%),
+
+  // Divider Color
+  divider: (
+    300: hsl(240, 5%, 91%)
   ),
   // Neutral Text Colors
   text: (
-    100: hsl(0, 0%, 100%),
-    200: hsl(0, 0%, 80%),
-    300: hsl(0, 0%, 60%),
-    400: hsl(0, 0%, 20%),
-    500: hsl(0, 0%, 0%),
+    normal: hsl(240, 6%, 50%),
+    dark: hsl(237, 12%, 33%)
+  ),
+  light: (
+    normal: hsl(255, 100%, 100%),
   ),
 );

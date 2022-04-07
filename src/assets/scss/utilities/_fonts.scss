@@ -1,6 +1,8 @@
 // **************************************
 // FONT MAPS
 // **************************************
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
 $font-love: (
   f-size: (
     200: 0.8rem,
@@ -12,15 +14,11 @@ $font-love: (
     800: 3.016rem,
   ),
   f-weight: (
-    light: 100,
     normal: 400,
-    semi-bold: 600,
     bold: 700,
-    bolder: 900,
   ),
   f-family: (
-    headings: "Lato" sans-serif,
-    content: "Raleway" sans-serif,
+    main: "Kumbh Sans" sans-serif,
   ),
   l-weight: (
     sm-space: 1.3,

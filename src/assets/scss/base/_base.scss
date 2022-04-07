@@ -7,9 +7,6 @@
 /*-----BASE GLOBAL STYLES------*/
 * {
   box-sizing: border-box;
-  // background: #000 !important;
-  // color: #0f0 !important;
-  // outline: solid #f00 1px !important;
 }
 
 html {
@@ -23,7 +20,32 @@ body,
 }
 
 body {
-  background-color: var(--clr-background-400);
+  background-image: linear-gradient(
+    var(--clr-bg-gradient-2-300) 70%,
+    var(--clr-bg-gradient-1-300)
+  );
+  @include mq("md") {
+    background-image: linear-gradient(
+      var(--clr-bg-gradient-2-300) 50%,
+      var(--clr-bg-gradient-1-300)
+    );
+  }
+}
+
+main {
+  background-color: var(--clr-light-normal);
+  position: relative;
+  border-radius: var(--moderate-curve);
+  height: 100%;
+}
+
+section {
+  margin-top: px-to-rems(-120px);
+  @include mq("md") {
+    margin-top: px-to-rems(0px);
+    width: 80%;
+    align-self: center;
+  }
 }
 
 p {

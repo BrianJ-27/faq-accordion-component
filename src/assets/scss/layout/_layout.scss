@@ -5,7 +5,8 @@
 
 /*------BASE LAYOUT STYLES-----------*/
 #root {
-  max-width: calc(100% - 2rem);
+  @extend %ctr-grid-content;
+  padding: 5rem 1rem 3rem;
   @include mq("md") {
     max-width: --max-width;
   }

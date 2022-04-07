@@ -5,39 +5,61 @@
 
 /*-----HEADINGS------*/
 
-:is(h1,h2,h3,h4,h5,h6) {
-  font-family: var(--fp-family-headings);
+:is(h1, h2, h3, h4, h5, h6, p, span) {
+  font-family: var(--fp-family-main);
+}
+
+:is(.title__accordian, .content) {
+  text-align: left;
 }
 
 //h1 styles
 .title__primary {
   @extend %text-modules;
   @include text-prop(
-    $size: clamp(1rem, 1.908rem + (0.0454 * 100vw), 3.5rem),
-    $f-weight: var(--fp-f-weight-bold),
-    $color: var(--clr-text-100)
+    $size: clamp(1.6rem, 6vw, 1.8rem),
+    $f-weight: var(--fp-f-weight-bold)
   );
+  margin-bottom: px-to-rems(15px);
+  text-align: center;
+  @include mq("md") {
+    text-align: left;
+  }
 }
 
-//h2 styles
-.title__secondary {
-  @include text-prop(
-    $size: clamp(1.5rem, 8vw, 3rem),
-    $f-weight: var(--fp-f-weight-normal),
-    $color: var(--clr-text-100)
-  );
+// Summary Styles
+.title__accordian {
   @extend %text-modules;
+  @include text-prop(
+    $size: clamp(0.5rem, 3vw, 0.8rem),
+    $f-weight: var(--fp-f-weight-normal),
+    $color: var(--clr-text-normal)
+  );
 }
 
 /*----CONTENT STYLES----*/
-:is(p, span) {
-  font-family: var(--fp-family-content);
-}
 
+// p Styles
 .content {
   @include text-prop(
-    $size: clamp(1.25rem, 6vw, 2.5rem),
+    $size: clamp(0.3rem, 3vw, 0.8rem),
     $f-weight: var(--fp-f-weight-light),
-    $color: var(--clr-text-300)
+    $color: var(--clr-text-normal),
+    $l-height: 1.5
   );
+  padding-top: px-to-rems(5px);
+  padding-right: px-to-rems(15px);
+
+  &__attribution {
+    @include text-prop(
+      $size: clamp(0.3rem, 3vw, 0.8rem),
+      $f-weight: var(--fp-f-weight-light),
+      $color: var(--clr-text-dark),
+      $l-height: 1.5
+    );
+    > a {
+      color: var(--clr-secondary-text);
+      font-weight: var(--fp-f-weight-bold);
+    }
+  }
 }

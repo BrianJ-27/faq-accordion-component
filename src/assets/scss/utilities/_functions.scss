@@ -9,13 +9,8 @@ Important reminders:
 */
 
 @use "../utilities/variables" as *;
-$base-font-size: 16px;
+$base-font-size: 12px;
 //convert pixels to rem value
 @function px-to-rems($target, $context: $base-font-size) {
   @return calc(($target / $context) * 1rem);
-}
-
-//convert pixels to percentage value
-@function px-to-pc($target, $context: $max-width) {
-  @return calc(($target / $context) * 100%);
 }
