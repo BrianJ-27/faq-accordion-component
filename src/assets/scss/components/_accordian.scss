@@ -1,22 +1,10 @@
 // **************************************
 // ACCORDIAN STYLES
 // **************************************
-
 details {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--clr-divider-300);
-}
-
-details > summary {
-  list-style: none;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-summary::-webkit-details-marker {
-  display: none;
 }
 
 summary::after {
@@ -24,13 +12,14 @@ summary::after {
   font-size: 1rem;
   color: var(--clr-secondary-text);
   font-weight: var(--fp-f-weight-bold);
-  align-self: flex-end;
 }
+
 details[open] summary:after {
   content: "^";
   position: relative;
   top: 7px;
 }
+
 details[open] summary.title__accordian {
   color: var(--clr-primary-text);
   font-weight: var(--fp-f-weight-bold);

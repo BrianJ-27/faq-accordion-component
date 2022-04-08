@@ -27,7 +27,7 @@
   }
 }
 
-// Summary Styles
+// summary title styles
 .title__accordian {
   @extend %text-modules;
   @include text-prop(
@@ -39,7 +39,7 @@
 
 /*----CONTENT STYLES----*/
 
-// p Styles
+// p styles
 .content {
   @include text-prop(
     $size: clamp(0.3rem, 3vw, 0.7rem),

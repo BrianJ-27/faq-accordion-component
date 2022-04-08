@@ -6,5 +6,5 @@
 /*------FLEXBOX LAYOUT STYLES-----------*/
 
 .flex__container {
-  @include flex_me($dir: column, $wrap: wrap);
+  @include flex_me($vertAlign: flex-end, $just: space-between);
 }
