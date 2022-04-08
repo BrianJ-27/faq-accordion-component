@@ -37,7 +37,8 @@
     @include mq("md") {
       display: block;
       max-width: 500px;
-      margin-right: px-to-rems(80px);
+      margin-right: px-to-rems(40px);
+      z-index: 20;
     }
   }
 
@@ -50,6 +51,7 @@
       position: absolute;
       top: -74%;
       left: -55%;
+      z-index: 50;
     }
   }
   &__box-desktop {
@@ -58,8 +60,8 @@
     @include mq("md") {
       display: block;
       position: absolute;
-      max-width: 250px;
-      top: 45%;
+      max-width: 170px;
+      top: 41%;
       z-index: 99;
       left: -9%;
     }

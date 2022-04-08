@@ -17,7 +17,7 @@
 .title__primary {
   @extend %text-modules;
   @include text-prop(
-    $size: clamp(1.6rem, 6vw, 1.8rem),
+    $size: clamp(1.4rem, 6vw, 1.5rem),
     $f-weight: var(--fp-f-weight-bold)
   );
   margin-bottom: px-to-rems(15px);
@@ -31,7 +31,7 @@
 .title__accordian {
   @extend %text-modules;
   @include text-prop(
-    $size: clamp(0.5rem, 3vw, 0.8rem),
+    $size: clamp(0.5rem, 3vw, 0.7rem),
     $f-weight: var(--fp-f-weight-normal),
     $color: var(--clr-text-normal)
   );
@@ -42,7 +42,7 @@
 // p Styles
 .content {
   @include text-prop(
-    $size: clamp(0.3rem, 3vw, 0.8rem),
+    $size: clamp(0.3rem, 3vw, 0.7rem),
     $f-weight: var(--fp-f-weight-light),
     $color: var(--clr-text-normal),
     $l-height: 1.5
@@ -52,9 +52,9 @@
 
   &__attribution {
     @include text-prop(
-      $size: clamp(0.3rem, 3vw, 0.8rem),
+      $size: clamp(0.3rem, 3vw, 0.7rem),
       $f-weight: var(--fp-f-weight-light),
-      $color: var(--clr-text-dark),
+      $color: var(--clr-light-normal),
       $l-height: 1.5
     );
     > a {
