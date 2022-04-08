@@ -6,14 +6,12 @@ import BgDesktop from "../../assets/images/bg-pattern-desktop.svg";
 
 const ImgContainer = () => {
   return (
-    <React.Fragment>
-      <div className="img__container">
-        <img className="img__logo" src={WomanMobile} alt="" />
-        <img className="img__shadow" src={BgMobile} alt="" />
-        <img className="img__logo-desktop" src={WomanDesktop} alt="" />
-        <img className="img__shadow-desktop" src={BgDesktop} alt="" />
-      </div>
-    </React.Fragment>
+    <div className="img__container">
+      <img className="img__logo" src={WomanMobile} alt="" />
+      <img className="img__shadow" src={BgMobile} alt="" />
+      <img className="img__logo-desktop" src={WomanDesktop} alt="" />
+      <img className="img__shadow-desktop" src={BgDesktop} alt="" />
+    </div>
   );
 };
 
