@@ -52,7 +52,7 @@
 
   &__attribution {
     @include text-prop(
-      $size: clamp(0.3rem, 3vw, 0.7rem),
+      $size: clamp(0.35rem, 2.5vw, 0.75rem),
       $f-weight: var(--fp-f-weight-light),
       $color: var(--clr-light-normal),
       $l-height: 1.5

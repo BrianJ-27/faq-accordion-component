@@ -7,25 +7,23 @@ import BoxDesktop from "./assets/images/illustration-box-desktop.svg";
 
 function App() {
   return (
-    <React.Fragment>
-      <main>
-        <img
-          className="img__box-desktop"
-          src={BoxDesktop}
-          alt="orange box with @ symbol on top"
-        />
-        <div className="main__grid--wrapper">
-          <ImageContainer />
-          <section className="accordian">
-            <h1 className="title__primary">FAQ</h1>
-            {questions.map(({ id, title, content }) => (
-              <AccordianMenu key={id} title={title} content={content} />
-            ))}
-          </section>
-        </div>
-      </main>
+    <main>
+      <img
+        className="img__box-desktop"
+        src={BoxDesktop}
+        alt="orange box with @ symbol on top"
+      />
+      <div className="main__grid--wrapper">
+        <ImageContainer />
+        <section className="accordian">
+          <h1 className="title__primary">FAQ</h1>
+          {questions.map(({ id, title, content }) => (
+            <AccordianMenu key={id} title={title} content={content} />
+          ))}
+        </section>
+      </div>
       <Footer />
-    </React.Fragment>
+    </main>
   );
 }
 

@@ -11,7 +11,7 @@ const Footer = () => {
       >
         Frontend Mentor
       </a>
-      . Coded by <a href="#footer">Brian Johnson</a>.
+      &nbsp;| Coded by <a href="#footer">Brian Johnson</a>
     </footer>
   );
 };

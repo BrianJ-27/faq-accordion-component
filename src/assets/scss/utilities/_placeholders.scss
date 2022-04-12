@@ -43,6 +43,17 @@
   text-decoration: none;
 }
 
+// Footer Styles
+%footer-properties {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 450px;
+  bottom: -15%;
+}
+
 /******************************************
 REUSEABLE SINGLE STYLES
 ******************************************/

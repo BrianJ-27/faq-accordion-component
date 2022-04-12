@@ -6,21 +6,19 @@
 /*------GRID LAYOUT STYLES-----------*/
 #root {
   @extend %ctr-grid-content;
-  padding: 5rem 0.5rem 3rem;
+  width: min(100% - 1.5rem, 950px);
+  padding: 5rem 1rem 3rem;
+  margin-inline: auto;
 }
 
 /*------GRID LAYOUT STYLES-----------*/
 
 //Main Content Grid Layout
 .main__grid--wrapper {
-  display: grid;
-  place-items: center;
-  margin: auto;
+  @extend %ctr-grid-content;
   padding: px-to-rems(10px);
   @include mq("md") {
     overflow: hidden;
-    max-width: 950px;
-    height: 100%;
     grid-template-areas: "img__container accordian";
     grid-template-columns: 40% 60%;
     padding: px-to-rems(0px);
@@ -36,6 +34,5 @@
 .accordian {
   @include mq("md") {
     grid-area: accordian;
-    margin-left: px-to-rems(30px);
   }
 }
